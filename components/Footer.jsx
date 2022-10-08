@@ -53,15 +53,13 @@ const Footer = () => {
 
  
       </div>
-      <div className="text-white grid flex items-center lg:grid grid-cols-2 bg-black text-xs">
-        <div>
-          <p className="pl-1">&copy; 2022 BoilingSports.com. All rights reserved.</p>
+      <div className="text-white grid-cols-1 block items-center lg:grid grid-cols-2 bg-black text-xs">
+        <div className="grid justify-items-center lg:justify-items-start" >
+          <p className="pl-1 m-2">&copy; 2022 BoilingSports.com. All rights reserved.</p>
         </div>
-        <div className="grid justify-items-end">
+        <div className="grid justify-items-center lg:justify-items-end">
           <div className="flex items-center ">
             <p className="m-2">designed by: <span className="text-green-500">TK</span></p>{" "}
-          
-           
           </div>
         </div>
       </div>
