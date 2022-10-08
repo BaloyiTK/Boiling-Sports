@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap.config"
+    "postbuild": "next-sitemap --config awesome.config.js"
   },
   "dependencies": {
     "graphql": "^16.6.0",
