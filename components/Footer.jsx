@@ -47,7 +47,7 @@ const Footer = () => {
         <h3 className="font-bold mt-5">Contact Us</h3>
           
 
-          <p>boilingsports@gmail.com</p>
+          <p>boilingsports@gmail.com. All rights reserved.</p>
    
         </div>
 
