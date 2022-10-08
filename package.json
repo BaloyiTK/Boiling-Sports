@@ -21,6 +21,7 @@
     "react-multi-carousel": "^2.8.2",
     "react-social-icons": "^5.15.0",
     "sass": "^1.55.0",
+    "sitemap": "^7.1.1",
     "yarn": "^1.22.19"
   },
   "devDependencies": {
