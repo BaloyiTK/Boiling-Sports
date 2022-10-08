@@ -7,32 +7,6 @@ import Script from "next/script";
 export default function Home({ posts }) {
   return (
     <div className="container mx-auto px-10 mb-8">
-
-      
-
-
-         <script src="https://adstrack2.com/ppc/2425" async></script >
-      <div id="acm-display-2425"></div>
-
-
-      <script
-        type="text/javascript"
-        src="https://udbaa.com/bnr.php?section=General&pub=872657&format=300x250&ga=g"
-        async
-      ></script>
-      <noscript>
-        <a
-          href="https://yllix.com/publishers/872657"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <img
-            src="//ylx-aff.advertica-cdn.com/pub/300x250.png"
-            style={{ margin: 0, padding: 0 }}
-            alt="ylliX - Online Advertising Network"
-          />
-        </a>
-      </noscript>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-Q2LN0BXS84"
         strategy="afterInteractive"
@@ -46,8 +20,6 @@ export default function Home({ posts }) {
           gtag('config', 'G-Q2LN0BXS84');
         `}
       </Script>
-
-      
 
       <Head>
         <title>Boiling Sports | Football, Rugby, Tennis and Golf news</title>
@@ -64,32 +36,22 @@ export default function Home({ posts }) {
         />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        
- 
-
-
       </Head>
       <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7847426332221494"
-          crossorigin="anonymous"
-        />
-
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7847426332221494"
+        crossorigin="anonymous"
+      />
       <FeaturedPost />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {posts.map((post) => (
-            
             <PostCard post={post.node} key={post.title} />
           ))}
-             <script src="https://adstrack2.com/ppc/2425" async></script>
-             <div id="acm-display-2425"></div>
         </div>
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
-
             <PostWidget />
             <Categories />
           </div>

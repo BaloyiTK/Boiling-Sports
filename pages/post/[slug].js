@@ -22,27 +22,6 @@ const PostDetails = ({ post }) => {
 
   return (
     <div className="container mx-auto px-10 mb-8 bg:white">
-      <script src="https://adstrack2.com/ppc/2425" async></script>
-      <div id="acm-display-2425"></div>
-
-      <script
-        type="text/javascript"
-        src="https://udbaa.com/bnr.php?section=General&pub=872657&format=300x250&ga=g"
-        async
-      ></script>
-      <noscript>
-        <a
-          href="https://yllix.com/publishers/872657"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <img
-            src="//ylx-aff.advertica-cdn.com/pub/300x250.png"
-            style={{ margin: 0, padding: 0 }}
-            alt="ylliX - Online Advertising Network"
-          />
-        </a>
-      </noscript>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-Q2LN0BXS84"
         strategy="afterInteractive"
@@ -65,7 +44,7 @@ const PostDetails = ({ post }) => {
         <title>{post.title}</title>
         <meta name="description" content={post.excerpt} key="desc" />
       </Head>
-      ;
+
       <div className="grid grid-col-1 lg:grid-cols-12 gap-12">
         <div className="col-span-1 lg:col-span-8">
           <PostDetail post={post} />
@@ -76,7 +55,6 @@ const PostDetails = ({ post }) => {
         </div>
         <div className="col-span-1 lg:col-span-4">
           <div className="relative lg:sticky top-8">
-            
             {
               <PostWidget
                 slug={post.slug}
@@ -85,10 +63,6 @@ const PostDetails = ({ post }) => {
             }
             <Categories />
           </div>
-          <script src="https://adstrack2.com/ppc/2425" async></script>
-          <div id="acm-display-2425"></div>
-
-
         </div>
       </div>
     </div>
