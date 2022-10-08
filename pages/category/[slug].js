@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import Script from 'next/script';
 
 import { getCategories, getCategoryPost } from '../../services';
 import { PostCard, Categories, Loader } from '../../components';
