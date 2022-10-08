@@ -47,7 +47,7 @@ const Footer = () => {
         <h3 className="font-bold mt-5">Contact Us</h3>
           
 
-          <p>boilingsports@gmail.com. All rights reserved.</p>
+          <p>boilingsports@gmail.com</p>
    
         </div>
 
@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
       <div className="text-white grid flex items-center lg:grid grid-cols-2 bg-black text-xs">
         <div>
-          <p className="pl-1">&copy; 2022 BoilingSports.com</p>
+          <p className="pl-1">&copy; 2022 BoilingSports.com. All rights reserved.</p>
         </div>
         <div className="grid justify-items-end">
           <div className="flex items-center ">
