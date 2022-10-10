@@ -18,10 +18,10 @@ const PostDetail = ({ post }) => {
         modifiedText = <u key={index}>{text}</u>;
       }
       if (obj.hyperlink) {
-        modifiedText = <u key={index}>{text}</u>;
+        modifiedText = <a key={index}>{text}</a>;
       }
       if (obj.link) {
-        modifiedText = <u key={index}>{text}</u>;
+        modifiedText = <a key={index}>{text}</a>;
       }
     }
 

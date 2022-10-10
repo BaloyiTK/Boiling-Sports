@@ -77,7 +77,7 @@ export const getPostDetails = async (slug) => {
         createdAt
         slug
         content {
-          HTML
+          raw
         }
         categories {
           name
