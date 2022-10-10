@@ -29,20 +29,20 @@ const PostDetail = ({ post }) => {
 
       case "hyperlink":
         return (
-          <h3 key={index} className="text-xl font-semibold mb-4">
+          <a key={index} className="text-xl font-semibold mb-4">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item}</React.Fragment>
             ))}
-          </h3>
+          </a>
         );
 
         case "link":
           return (
-            <h3 key={index} className="text-xl font-semibold mb-4">
+            <a key={index} className="text-xl font-semibold mb-4">
               {modifiedText.map((item, i) => (
                 <React.Fragment key={i}>{item}</React.Fragment>
               ))}
-            </h3>
+            </a>
           );
 
         
