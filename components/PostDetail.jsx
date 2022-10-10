@@ -26,6 +26,27 @@ const PostDetail = ({ post }) => {
     }
 
     switch (type) {
+
+      case "hyperlink":
+        return (
+          <h3 key={index} className="text-xl font-semibold mb-4">
+            {modifiedText.map((item, i) => (
+              <React.Fragment key={i}>{item}</React.Fragment>
+            ))}
+          </h3>
+        );
+
+        case "link":
+          return (
+            <h3 key={index} className="text-xl font-semibold mb-4">
+              {modifiedText.map((item, i) => (
+                <React.Fragment key={i}>{item}</React.Fragment>
+              ))}
+            </h3>
+          );
+
+        
+
       case "heading-three":
         return (
           <h3 key={index} className="text-xl font-semibold mb-4">
