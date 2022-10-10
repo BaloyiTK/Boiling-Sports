@@ -35,7 +35,6 @@ const PostDetail = ({ post }) => {
             ))}
           </a>
         );
-
         case "link":
           return (
             <a key={index} className="text-xl font-semibold mb-4">
@@ -44,9 +43,6 @@ const PostDetail = ({ post }) => {
               ))}
             </a>
           );
-
-        
-
       case "heading-three":
         return (
           <h3 key={index} className="text-xl font-semibold mb-4">
