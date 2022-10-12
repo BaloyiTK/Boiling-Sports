@@ -19,6 +19,7 @@ const PostDetails = ({ post }) => {
     return <Loader />;
   }
   return (
+    
     <div className="container mx-auto px-10 mb-8 bg:white">
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-Q2LN0BXS84"

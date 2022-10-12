@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
 
+
 const Footer = () => {
   return (
     <div>
@@ -44,9 +45,11 @@ const Footer = () => {
 
         <div>
           <h3 className="font-bold mt-5">Contact Us</h3>
-          <p>
+          <p className="mt-5">
             <a href="mailto:boilingsports@gmail.com">Email</a>
+        
           </p>
+     
         </div>
       </div>
       <div className="text-white grid-cols-1 block items-center lg:grid grid-cols-2 bg-black text-xs">
