@@ -9,7 +9,6 @@ import {
   Categories,
   Loader,
 } from "../../components";
-
 import React from "react";
 import Head from "next/head";
 import Script from "next/script";
@@ -19,7 +18,6 @@ const PostDetails = ({ post }) => {
   if (router.isFallback) {
     return <Loader />;
   }
-
   return (
     <div className="container mx-auto px-10 mb-8 bg:white">
       <Script
@@ -79,7 +77,6 @@ export async function getStaticProps({ params }) {
     revalidate: 10,
   };
 }
-
 export async function getStaticPaths() {
   const posts = await getPosts();
 
