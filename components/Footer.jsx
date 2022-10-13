@@ -29,7 +29,7 @@ const Footer = () => {
                 url="https://twitter.com/BoilingSports"
                 target="_blank"
               />
-              <a href="https://twitter.com/BoilingSports?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @BoilingSports</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              
             </div>
           </div>
           <div className=" m-5 items-center text-center">
