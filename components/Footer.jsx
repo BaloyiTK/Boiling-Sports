@@ -26,7 +26,7 @@ const Footer = () => {
               <SocialIcon
                 fgColor="white"
                 style={{ height: 40, width: 40 }}
-                url="https://twitter.com/boiling_sports"
+                url="https://twitter.com/BoilingSports"
                 target="_blank"
               />
             </div>
