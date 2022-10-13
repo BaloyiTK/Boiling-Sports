@@ -36,6 +36,26 @@ export default function Home({ posts }) {
         />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:site"
+          content="@https://twitter.com/BoilingSports"
+        />
+        <meta
+          name="twitter:title"
+          content="Boiling Sports | Football, Rugby, Tennis and Golf news"
+        />
+        <meta
+          name="twitter:description"
+          content="Boiling Sports | The international Sports News | Blog
+
+The official twitter account."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.boilingsports.co.za/_next/image?url=%2FLOGO.png&w=128&q=75"
+        />
+
         <link rel="preload" href="globals.scss" as="style"></link>
       </Head>
       <Script
