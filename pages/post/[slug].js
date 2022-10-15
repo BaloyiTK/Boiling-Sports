@@ -57,7 +57,7 @@ const PostDetails = ({ post }) => {
           name="twitter:description"
           content="Boiling Sports | The international Sports News | Blog
 
-The official twitter account."
+          The official twitter account."
         />
         <meta
           name="twitter:image"
