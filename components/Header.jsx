@@ -22,13 +22,13 @@ const Header = () => {
           <Link href={"/"}>
             <Image
               width={55}
-              height={75}
+              height={60}
               src="/LOGO.png"
               alt="Boiling Sports"
             />
           </Link>
           <Link href={"/"}>
-            <span className="grid cursor-pointer font-bold text-white  text-4xl">
+            <span className="grid cursor-pointer font-bold text-white ml-1  text-2xl">
               <span className="text-red-700">Boiling </span>
               <span className="py-0"> Sports</span>
             </span>

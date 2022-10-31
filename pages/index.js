@@ -49,7 +49,7 @@ export default function Home({ posts }) {
           name="twitter:description"
           content="Boiling Sports | The international Sports News | Blog
 
-The official twitter account."
+          The official twitter account."
         />
         <meta
           name="twitter:image"
@@ -66,7 +66,8 @@ The official twitter account."
       <FeaturedPost />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <div className="lg:col-span-8 col-span-1">
+       
+        <div className="col-span-1 lg:col-span-8">
           {posts.map((post) => (
             <PostCard post={post.node} key={post.title} />
           ))}

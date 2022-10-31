@@ -12,6 +12,7 @@ import {
 import React from "react";
 import Head from "next/head";
 import Script from "next/script";
+import { serialize } from "next-mdx-remote/serialize";
 
 const PostDetails = ({ post }) => {
   const router = useRouter();
@@ -93,8 +94,9 @@ export default PostDetails;
 
 export async function getStaticProps({ params }) {
   const data = await getPostDetails(params.slug);
+  const html = await serialize(data.content);
   return {
-    props: { post: data },
+    props: { post: data ,content:html},
 
     revalidate: 10,
   };
