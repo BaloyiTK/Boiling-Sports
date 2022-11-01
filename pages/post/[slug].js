@@ -94,9 +94,9 @@ export default PostDetails;
 
 export async function getStaticProps({ params }) {
   const data = await getPostDetails(params.slug);
-  const html = await serialize(data.content);
+ 
   return {
-    props: { post: data ,content:html},
+    props: { post: data },
 
     revalidate: 10,
   };
