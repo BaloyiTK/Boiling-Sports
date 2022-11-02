@@ -29,7 +29,7 @@ const PostWidget = ({ categories, slug }) => {
             <Link href={`/post/${post.slug}`} key={post.title}>
               <img
                 src={post.featuredImage.url}
-                alt={post.title}
+                alt= {"Boiling Sports_" + index}
                 height="60px"
                 width="60px"
                 className="align-middle rounded-full w-12 h-12"
