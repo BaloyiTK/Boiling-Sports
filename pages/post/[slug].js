@@ -71,8 +71,7 @@ const PostDetails = ({ post }) => {
           <PostDetail post={post} />
           <script src="https://adstrack2.com/ppc/2425" async></script>
           <div id="acm-display-2425"></div>
-          {/* <Comments slug={post.slug} /> */}
-          {/* <CommentsForm slug={post.slug} /> */}
+  
         </div>
         <div className="col-span-1 lg:col-span-4">
           <div className="relative lg:sticky top-8">
