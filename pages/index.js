@@ -22,7 +22,7 @@ export default function Home({ posts }) {
       </Script>
 
       <Head>
-        <title>Boiling Sports | Football {'(Soccer)'} news, results, updates and live stream links</title>
+        <title>Football {'(Soccer)'} news, results, updates and live stream links</title>
         <link rel="icon" href="/favicon.ico" />
         <meta charset="UTF-8" />
         <meta
