@@ -1,7 +1,7 @@
 import React from "react";
 import moment from "moment";
 import ReactMarkdown from "react-markdown";
-import { RichText } from "@graphcms/rich-text-react-renderer";
+
 
 const PostDetail = ({ post }) => {
   return (
