@@ -22,7 +22,7 @@ export default function Home({ posts }) {
       </Script>
 
       <Head>
-        <title>Boiling Sports | Football, Rugby, Tennis and Golf news on top leagues around the world | live stream links</title>
+        <title>Boiling Sports | Football{'(Soccer)'} news and updates on top leagues around the world and live stream links</title>
         <link rel="icon" href="/favicon.ico" />
         <meta charset="UTF-8" />
         <meta
@@ -31,7 +31,7 @@ export default function Home({ posts }) {
         ></meta>
         <meta
           name="description"
-          content="Get the latest international sports news, live stream links, results and updates from around the globe."
+          content="Get the latest international Football(Soccer), live stream links, results and updates from around the world."
           key="desc"
         />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
