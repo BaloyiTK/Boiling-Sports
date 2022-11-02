@@ -63,7 +63,18 @@ export default function Home({ posts }) {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7847426332221494"
         crossorigin="anonymous"
       />
-      <FeaturedPost />
+
+      <div className="text-white">
+        <h1 className="text-xl font-bold">
+             Welcome to Boiling Sports
+        </h1>
+      <br/>
+      
+        <p>The international football/soccer news, updates and live streaming links</p>
+
+      </div>
+
+      <br/>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
        
