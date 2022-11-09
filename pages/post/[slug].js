@@ -21,7 +21,7 @@ const PostDetails = ({ post }) => {
   }
   return (
     
-    <div className="container mx-auto px-10 mb-8 bg:white">
+    <div className="container mx-auto px-5 bg:px-10 mb-8 bg:white">
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-Q2LN0BXS84"
         strategy="afterInteractive"

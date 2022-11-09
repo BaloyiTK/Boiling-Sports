@@ -6,7 +6,7 @@ import Script from "next/script";
 
 export default function Home({ posts }) {
   return (
-    <div className="container mx-auto px-10 mb-8">
+    <div className="container mx-auto px-5 bg:px-10 mb-8">
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-Q2LN0BXS84"
         strategy="afterInteractive"
@@ -66,7 +66,7 @@ export default function Home({ posts }) {
 
       <div className="text-white">
         <h1 className="text-xl font-bold">
-             Welcome to Boiling Sports.<br/><br/> The international football {"(soccer)"} news, updates and live streaming links
+             Boiling Sports contains international football {"(soccer)"} news, updates and live streaming links
         </h1>
       
       </div>
