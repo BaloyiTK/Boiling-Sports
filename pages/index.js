@@ -22,7 +22,9 @@ export default function Home({ posts }) {
       </Script>
 
       <Head>
-        <title>Football {'(Soccer)'} news, results, updates and live stream links</title>
+        <title>
+          Football {"(Soccer)"} news, results, updates and live stream links
+        </title>
         <link rel="icon" href="/favicon.ico" />
         <meta charset="UTF-8" />
         <meta
@@ -66,15 +68,14 @@ export default function Home({ posts }) {
 
       <div className="text-white">
         <h1 className="text-xl font-bold">
-             Boiling Sports contains international football {"(soccer)"} news, updates and live streaming links
+          Boiling Sports contains international football {"(soccer)"} news,
+          updates and live streaming links
         </h1>
-      
       </div>
 
-      <br/>
+      <br />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-       
         <div className="col-span-1 lg:col-span-8">
           {posts.map((post) => (
             <PostCard post={post.node} key={post.title} />
