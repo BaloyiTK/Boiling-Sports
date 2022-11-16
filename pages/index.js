@@ -25,7 +25,7 @@ export default function Home({ posts }) {
         <title>
           Football {"(Soccer)"} news, results, updates and live stream links
         </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="preload" href="/favicon.ico" />
         <meta charset="UTF-8" />
         <meta
           name="ahrefs-site-verification"

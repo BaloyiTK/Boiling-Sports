@@ -47,7 +47,7 @@ const Footer = () => {
         <div>
           <h3 className="font-bold mt-5">Contact Us</h3>
           <p className="mt-5">
-            <a href="mailto:boilingsports@gmail.com">Email</a>
+            <a href="mailto:boilingsports@gmail.com" title=" boiling sports email">Email</a>
         
           </p>
      
