@@ -41,7 +41,7 @@ export default function App() {
   }, [cartOpen]);
 
   const filtered = useMemo(() => {
-    const list = products.filter(p => (category === "All products" || p.category === category) && p.price <= maxPrice && (!saleOnly || p.oldPrice) && (!query || [p.name, p.category, p.description].join(" ").toLowerCase().includes(query.toLowerCase())));
+    const list = products.filter(p => (category === "All products" || (category === "Face care" ? p.category !== "Sunscreen" : p.category === category)) && p.price <= maxPrice && (!saleOnly || p.oldPrice) && (!query || [p.name, p.category, p.description].join(" ").toLowerCase().includes(query.toLowerCase())));
     if (sort === "price-low") list.sort((a,b) => a.price-b.price);
     if (sort === "price-high") list.sort((a,b) => b.price-a.price);
     if (sort === "rating") list.sort((a,b) => b.rating-a.rating);
