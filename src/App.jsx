@@ -1,4 +1,4 @@
-import{useMemo,useState}from'react';import{Search,ShoppingBag,Menu,X,SlidersHorizontal,Plus,Minus,ArrowUpRight,Star,Check,Heart,Sparkles,ChevronDown,Trash2}from'lucide-react';import{products,categories}from'./data/products';
+import React,{useMemo,useState}from'react';import{Search,ShoppingBag,Menu,X,SlidersHorizontal,Plus,Minus,ArrowUpRight,Star,Check,Heart,Sparkles,ChevronDown,Trash2}from'lucide-react';import{products,categories}from'./data/products';
 const money=n=>new Intl.NumberFormat('en-ZA',{style:'currency',currency:'ZAR',maximumFractionDigits:0}).format(n);
 export default function App(){
 const[category,setCategory]=useState('All products'),[query,setQuery]=useState(''),[sort,setSort]=useState('featured'),[maxPrice,setMaxPrice]=useState(350),[showFilters,setShowFilters]=useState(false),[cart,setCart]=useState([]),[cartOpen,setCartOpen]=useState(false),[mobileMenu,setMobileMenu]=useState(false),[toast,setToast]=useState(''),[saved,setSaved]=useState([]),[onlyDeals,setOnlyDeals]=useState(false);
