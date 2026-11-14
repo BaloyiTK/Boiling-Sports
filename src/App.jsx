@@ -3,9 +3,9 @@ import { ArrowRight, ArrowUpRight, Check, ChevronLeft, ChevronRight, Heart, Menu
 import { products, categories } from "./data/products";
 
 const slides = [
-  { eyebrow: "THE JADE SKINCARE EDIT", title: "A better kind of", accent: "everyday ritual.", copy: "Considered skincare for the moments that are yours. Find the essentials that make your routine feel like you.", action: "Explore the collection", category: "All products", image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=1500&auto=format&fit=crop&q=90", alt: "Skincare bottles arranged in soft natural light" },
-  { eyebrow: "CARE, WITHOUT THE COMPLICATION", title: "Good skin days", accent: "start here.", copy: "A thoughtful edit of daily face care, from gentle cleansing to the finishing touch of SPF.", action: "Find your essentials", category: "Face care", image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=1500&auto=format&fit=crop&q=90", alt: "A considered skincare ritual" },
-  { eyebrow: "MAKE ROOM FOR YOU", title: "A little care.", accent: "A lot of you.", copy: "Simple routines. Everyday essentials. Skincare that fits into real life.", action: "Shop the edit", category: "Serums", image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1500&auto=format&fit=crop&q=90", alt: "A calm facial skincare treatment" }
+  { eyebrow: "THE ART OF EVERYDAY CARE", title: "Care for your", accent: "everyday.", copy: "Thoughtful essentials, uncomplicated routines. Discover a considered approach to everyday skin.", action: "Explore the collection", category: "All products", image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=1500&auto=format&fit=crop&q=90", alt: "Skincare bottles arranged in soft natural light" },
+  { eyebrow: "A MORE CONSIDERED ROUTINE", title: "Make space for", accent: "your skin.", copy: "The everyday essentials: a gentle cleanse, considered care and daily protection.", action: "Find your essentials", category: "Face care", image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=1500&auto=format&fit=crop&q=90", alt: "A considered skincare ritual" },
+  { eyebrow: "LESS NOISE. MORE CARE.", title: "The beauty of", accent: "everyday care.", copy: "Simple rituals and thoughtful essentials for the skin you live in.", action: "Shop the edit", category: "Serums", image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1500&auto=format&fit=crop&q=90", alt: "A calm facial skincare treatment" }
 ];
 const formatPrice = value => new Intl.NumberFormat("en-ZA", { style: "currency", currency: "ZAR", maximumFractionDigits: 0 }).format(value);
 
@@ -83,15 +83,15 @@ export default function App() {
         </div>
         <div className="hero-visual" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onFocus={() => setPaused(true)} onBlur={e => { if (!e.currentTarget.contains(e.relatedTarget)) setPaused(false); }}>
           <img key={slide} src={slides[slide].image} alt={slides[slide].alt} fetchPriority={slide === 0 ? "high" : "auto"}/>
-          <div className="hero-image-caption"><span>THE JADE EDIT</span><strong>Skincare, in its own time.</strong></div>
+          <div className="hero-image-caption"><span>THE JADE EDIT</span><strong>A quieter kind of skincare.</strong></div>
           <div className="hero-arrows"><button aria-label="Previous slide" onClick={() => setSlide(i => (i + slides.length - 1) % slides.length)}><ChevronLeft size={18}/></button><button aria-label="Next slide" onClick={() => setSlide(i => (i + 1) % slides.length)}><ChevronRight size={18}/></button></div>
         </div>
       </section>
 
-      <section className="brand-notes" aria-label="Our values"><span>Thoughtful everyday care</span><i>✳</i><span>Simple routines</span><i>✳</i><span>Essentials worth keeping</span></section>
+      <section className="brand-notes" aria-label="Our values"><span>Thoughtful formulations</span><i>✳</i><span>Everyday rituals</span><i>✳</i><span>Made for your routine</span></section>
 
       <section className="shop-section" id="shop">
-        <div className="section-heading"><div><p className="kicker">THE JADE COLLECTION</p><h2>Find your <em>everyday.</em></h2><p className="section-intro">A considered edit of skincare essentials.</p></div><span className="product-count">{filtered.length} products</span></div>
+        <div className="section-heading"><div><p className="kicker">THE JADE COLLECTION</p><h2>The everyday <em>edit.</em></h2><p className="section-intro">A thoughtful collection for your daily routine.</p></div><span className="product-count">{filtered.length} products</span></div>
         <div className="category-tabs" aria-label="Product categories">{categories.map(c => <button key={c} className={category === c ? "selected" : ""} onClick={() => setCategory(c)}>{c}</button>)}</div>
         <div className="shop-toolbar"><button onClick={() => setShowFilters(v => !v)} aria-expanded={showFilters}><SlidersHorizontal size={15}/> Filter</button><label>Sort <select value={sort} onChange={e => setSort(e.target.value)}><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option></select></label></div>
         {showFilters && <div className="filter-panel"><label>Maximum price <strong>{formatPrice(maxPrice)}</strong><input type="range" min="100" max="350" step="10" value={maxPrice} onChange={e => setMaxPrice(Number(e.target.value))}/></label><label className="sale-filter"><input type="checkbox" checked={saleOnly} onChange={e => setSaleOnly(e.target.checked)}/> Sale items only</label><button onClick={resetFilters}>Clear filters</button></div>}
@@ -102,9 +102,9 @@ export default function App() {
         </article>)}</div> : <div className="empty-results"><h3>Nothing in this edit.</h3><p>Try another search or clear your filters.</p><button onClick={resetFilters}>View all products</button></div>}
       </section>
 
-      <section className="story-section" id="story"><div className="story-image"><img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=1300&auto=format&fit=crop&q=85" alt="A quiet moment in a skincare routine" loading="lazy"/></div><div className="story-copy"><p className="kicker">A NOTE FROM JADE</p><h2>Skincare should<br/>feel like <em>you.</em></h2><p>We believe in a little less noise and a little more care. A thoughtful routine doesn't need to be complicated. Just find the essentials that feel right, and make a moment of them.</p><a href="#shop">Meet your new essentials <ArrowUpRight size={16}/></a></div></section>
+      <section className="story-section" id="story"><div className="story-image"><img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=1300&auto=format&fit=crop&q=85" alt="A quiet moment in a skincare routine" loading="lazy"/></div><div className="story-copy"><p className="kicker">OUR POINT OF VIEW</p><h2>A thoughtful<br/>way to <em>care.</em></h2><p>We believe good skincare should feel considered, never complicated. Start with the essentials, understand what works for your routine, and make a little room for care each day.</p><a href="#shop">Meet your new essentials <ArrowUpRight size={16}/></a></div></section>
 
-      <section className="newsletter"><div><p className="kicker">THE OCCASIONAL GOOD NOTE</p><h2>A little something<br/><em>for your inbox.</em></h2><p>Skincare notes, new arrivals and things worth sharing.</p></div><form onSubmit={e => { e.preventDefault(); flash("Newsletter signup is a preview and is not connected yet."); e.currentTarget.reset(); }}><input type="email" required placeholder="Your email address" aria-label="Your email address"/><button type="submit">Sign me up <ArrowUpRight size={16}/></button></form></section>
+      <section className="newsletter"><div><p className="kicker">STAY IN THE KNOW</p><h2>Notes on<br/><em>everyday care.</em></h2><p>New arrivals, thoughtful skincare notes and a little inspiration.</p></div><form onSubmit={e => { e.preventDefault(); flash("Newsletter signup is a preview and is not connected yet."); e.currentTarget.reset(); }}><input type="email" required placeholder="Your email address" aria-label="Your email address"/><button type="submit">Sign me up <ArrowUpRight size={16}/></button></form></section>
     </main>
 
     <footer className="site-footer"><a href="#top" className="wordmark">jade<span>.</span></a><p>Thoughtful skincare for your everyday.</p><nav><a href="#shop">Shop</a><a href="#story">Our approach</a></nav><small>© 2026 Jade Skincare. All rights reserved.</small></footer>
